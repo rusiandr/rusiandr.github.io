@@ -7,7 +7,15 @@
 
 /*icons*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+/* підключення normalize */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
 
+
+
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #242424;
@@ -16,11 +24,13 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5; /* висота строки */
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.2;
+    margin-top: 0;
 }
 
 h6 {
@@ -33,6 +43,12 @@ h6 {
 .regular-block {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.padding-section {
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-bottom: 20px;
 }
 
 
@@ -103,6 +119,7 @@ a:hover {
 /*  images  */
 img {
     vertical-align: middle; /* роздашування по игрик (у) */
+    /* display: block; чомусь підсвічує файл жовтим*/
     /* border-radius: 8px; */
 }
 
@@ -133,7 +150,11 @@ img {
 }
 
 
-
+.container {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
 /*footer*/
 footer {
@@ -142,20 +163,41 @@ footer {
 }
 
 .footer-bar-wrapper {
-    display: flex;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-bar-nav {
+    display: inline-block;
 }
 
 .footer-item {
     margin-right: 10px;
+    display: inline-block;
 }
 
 .footer-container {
+    display: flex;
     background-color: #242424;
     padding: 20 px 0px 20px 0px;
     justify-content: center;
 }
 
+.list-inline-item {
+    display: inline-block;
+}
 
+.social-icon {
+    display: block;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 48px;
+    height: 48px;
+}
+
+
+/* blog */
 .postblog {
     border-style: solid;
     border-width: 2;
