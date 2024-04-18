@@ -1,0 +1,74 @@
+.cart-header {
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 48px;
+}
+
+.cart-table {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 48px;
+    vertical-align: top;
+    border-collapse: collapse;
+    display: table;
+    color: black;
+}
+
+thead, tbody, tfoot, tr, td, th {
+    border-style: dashed;
+    border-width: 1px 0;
+    border-color: rgb(0, 0, 0);
+}
+
+.bg-table-header {
+    background-color: rgb(172, 92, 11);
+}
+
+.cart-table thead {
+    vertical-align: bottom;
+}
+
+.cart-table th {
+    padding: 10px ;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-align: start;
+}
+
+.cart-table tr {
+    display: table-row;
+}
+
+.cart-table td {
+    padding: 12px;
+    display: table-cell;
+}
+
+.cart-table td .remove {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    color: rgb(206, 57, 15);
+}
+
+.remove :hover {
+    color: rgb(172, 92, 11);
+}
+
+tbody {
+    background-color: rgb(255, 255, 255);
+}
+
+.reset-anchor {
+    color: black;
+}
+
+.shop-link {
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+.underline-link {
+    text-decoration: underline;
+    text-decoration-color: rgb(172, 92, 11);
+}

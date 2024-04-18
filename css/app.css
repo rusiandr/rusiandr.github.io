@@ -178,7 +178,7 @@ footer {
 
 .footer-container {
     display: flex;
-    background-color: #242424;
+    /* background-color: #242424; */
     padding: 20 px 0px 20px 0px;
     justify-content: center;
 }
@@ -189,7 +189,7 @@ footer {
 
 .social-icon {
     display: block;
-    background: #000000;
+    background: #3f3939;
     color: rgb(255, 255, 255);
     font-size: 16px;
     width: 48px;
