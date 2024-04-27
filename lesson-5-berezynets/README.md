@@ -1,1 +1,0 @@
-Site with stones sells
