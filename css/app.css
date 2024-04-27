@@ -30,7 +30,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.2;
-    margin-top: 0;
+    margin: 0 0;
 }
 
 h6 {
@@ -110,6 +110,8 @@ a:hover {
 .text-muted {
     color: rgb(15, 10, 26);
 }
+
+
 .hero-heading-title {
     color: rgb(255, 230, 0);
 }
@@ -129,7 +131,8 @@ img {
 }
 
 .product {
-    width: 250px; /* максимальна ширина блоку */
+    /* width: 250px; */
+    text-align: center; /* максимальна ширина блоку */
 }
 
 /* hero */
@@ -152,8 +155,79 @@ img {
 
 .container {
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.col {
+    display: inline-block;
+    width: calc((100% / 12) * 1);
+    flex: 0 1 auto;
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+    flex: 0 1 auto;
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+    flex: 0 1 auto;
+}
+
+.col-4 {
+    /* display: inline-block; */
+    width: calc((100% / 12) * 4);
+    flex: 0 1 auto;
+    
+}
+
+.col-5 {
+    width: calc((100% / 12) * 5);
+    flex: 0 1 auto;
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+    flex: 0 1 auto;
+}
+
+.col-7 {
+    width: calc((100% / 12) * 7);
+    flex: 0 1 auto;
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+    flex: 0 1 auto;
+}
+
+.col-9 {
+    width: calc((100% / 12) * 9);
+    flex: 0 1 auto;
+}
+
+.col-10 {
+    width: calc((100% / 12) * 10);
+    flex: 0 1 auto;
+}
+
+.col-11 {
+    width: calc((100% / 12) * 11);
+    flex: 0 1 auto;
+}
+
+.col-12 {
+    width: calc((100% / 12) * 12);
+    flex: 0 1 auto;
 }
 
 /*footer*/
@@ -203,3 +277,13 @@ footer {
     border-width: 2;
     border-color: #908f90;
 }
+
+.catalog {
+    flex: 4;
+    order: 1;
+}
+
+.sidebar {
+    flex: 1;
+    order: 2;
+} 
