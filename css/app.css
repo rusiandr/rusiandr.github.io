@@ -86,6 +86,7 @@ a:hover {
     justify-content: space-between; /* Розподіл простору між елементами */
     background-color: #333; /* Колір футера */
     padding: 20px; /* Внутрішній відступ */
+    align-items: center;
 }
 
 .navbar-wrapper {
@@ -95,6 +96,8 @@ a:hover {
 .navbar-nav {
     margin: 0; /* Зняття зовнішнього margin, який список має по дефолту */
     display: flex; /* гнучкий контейнер, було блочне, стало flex і поряд */
+    flex-wrap: wrap; /* якщо буде мобільний розмір, то текст не буде переноситись, якщо новрап то буде уходити за край екрану */ 
+    flex-direction: row; /* по замовчуванню вже стоїть це значення, його не треба прописувати */
 }
 
 .nav-item {
@@ -167,66 +170,74 @@ img {
     gap: 12px;
 }
 
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
 .col {
     display: inline-block;
-    width: calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
     flex: 0 1 auto;
 }
 
 .col-2 {
-    width: calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2);
     flex: 0 1 auto;
 }
 
 .col-3 {
-    width: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
     flex: 0 1 auto;
 }
 
 .col-4 {
     /* display: inline-block; */
-    width: calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
     flex: 0 1 auto;
     
 }
 
 .col-5 {
-    width: calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
     flex: 0 1 auto;
 }
 
 .col-6 {
-    width: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
     flex: 0 1 auto;
 }
 
 .col-7 {
-    width: calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
     flex: 0 1 auto;
 }
 
 .col-8 {
-    width: calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
     flex: 0 1 auto;
 }
 
 .col-9 {
-    width: calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
     flex: 0 1 auto;
 }
 
 .col-10 {
-    width: calc((100% / 12) * 10);
+    max-width: calc((100% / 12) * 10);
     flex: 0 1 auto;
 }
 
 .col-11 {
-    width: calc((100% / 12) * 11);
+    max-width: calc((100% / 12) * 11);
     flex: 0 1 auto;
 }
 
 .col-12 {
-    width: calc((100% / 12) * 12);
+    max-width: calc((100% / 12) * 12);
     flex: 0 1 auto;
 }
 
