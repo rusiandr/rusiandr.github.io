@@ -72,7 +72,27 @@ a:hover {
     color: rgb(255, 234, 0);
 }
 
+.mb-16 {
+    margin-bottom: 16px;
+}
 
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+@media (min-width: 749px) {
+    .mb-md-16 {
+        margin-bottom: 16px;
+    }
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
 
 /*   header   */
 
@@ -439,4 +459,54 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
     
+}
+
+
+
+
+/* forms */
+
+.form {
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.input-group div {
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    background-color: #f8f9fa;
+    border: 1px solid gray;
+    border: solid;
+    border-radius: 8px;
+}
+
+.btn-submit:hover {
+    transition: .5s ease;
+    transform: initial;
+    color: #1DCF94;
+
+}
+
+@media (min-width: 760px) {
+    .input-group div {
+        padding: 0;
+        margin: 0;
+        flex: 1;
+    }
 }
