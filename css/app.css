@@ -19,7 +19,7 @@
 
 body {
     background-color: #242424;
-    color: white;
+    color: white !important;
     font-family: Poppins, sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -46,8 +46,8 @@ h6 {
 }
 
 .padding-section {
-    padding-left: 36px;
-    padding-right: 36px;
+    /* padding-left: 36px;
+    padding-right: 36px; */
     margin-bottom: 20px;
 }
 
@@ -84,6 +84,10 @@ a:hover {
     margin-top: 32px;
 }
 
+.mt-64 {
+    margin-top: 64px;
+}
+
 @media (min-width: 749px) {
     .mb-md-16 {
         margin-bottom: 16px;
@@ -107,6 +111,11 @@ a:hover {
     background-color: #333; /* Колір футера */
     padding: 20px; /* Внутрішній відступ */
     align-items: center;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; */
 }
 
 .navbar-wrapper {
@@ -125,7 +134,6 @@ a:hover {
 }
 
 
-
 /* new fashion collection */
 .text-center {
     text-align: center;
@@ -136,7 +144,8 @@ a:hover {
 
 
 .hero-heading-title {
-    color: rgb(255, 230, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
 }
 
 
@@ -162,16 +171,24 @@ img {
 
 
 /* hero */
-.hero, .divider {
+.hero {
     background-repeat: no-repeat !important; /* можна репіт використати для узору */
     background-position: center !important;  /* роздашування по іксу (х) */
     background-size: cover !important; /* займе ширину блоку */
-    padding: 30px;
+    padding-top: 120px;
+    padding-bottom: 30px;
     margin-top: 30px;
+    color: #000000;
 }
 
 .divider {
     background-attachment: fixed !important; /* закріплення картинки при прокруті */
+    background-repeat: no-repeat !important; /* можна репіт використати для узору */
+    background-position: center !important;  /* роздашування по іксу (х) */
+    background-size: cover !important; /* займе ширину блоку */
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-top: 30px;
 }
 
 .badge {
@@ -179,19 +196,19 @@ img {
 }
 
 
-.container {
+/* .container {
     width: 100%;
+    min-width: 100% !important;
     margin: 0 auto;
-    padding: 8px;
-}
+    padding: 32px;
+} */
 
-.row {
+/* .row {
     width: 100%;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-}
+} */
 
 .justify-content-space-around {
     justify-content: space-around;
@@ -304,6 +321,11 @@ footer {
     height: 48px;
 }
 
+.fa-brands:hover {
+    color: #1DCF94;
+}
+
+
 
 /* colums */
 
@@ -379,6 +401,7 @@ footer {
 }
 .blog-item a {
     color: inherit; /* бере колір з батьківського елемента */
+    text-decoration: none;
 }
 
 .picture {
@@ -510,3 +533,152 @@ footer {
         flex: 1;
     }
 }
+
+
+/* catalog */
+
+
+.product {
+    position: relative;
+}
+
+.product .icons {
+    position: absolute;
+    top: 2rem;
+    right:1rem;
+    z-index: -10;
+}
+
+.product:hover .icons {
+    z-index: 10;
+    transition: .5s ease;
+    transform: translate3d(0, -1px, 0) scale(1.1);
+    transition: .3s linear;
+}
+
+.product:hover {
+    z-index: 10;
+    transition: .5s ease;
+    transform: translate3d(0, -1px, 0) scale(1.1); /* scale дає ефект руху,  */
+    transition: .3s linear;
+}
+
+.product-mp:hover {
+    z-index: 10;
+    transition: .5s ease;
+    transform: translate3d(0, -1px, 0) scale(1.1); /* scale дає ефект руху,  */
+    transition: .3s linear;
+}
+
+
+.product .icons a{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    color: #111;
+}
+
+.product .icons a:hover {
+    color: #671dcf;
+    background-color: #d2e5e6;
+}
+
+.plate {
+    background-color: #999;
+    border-radius: 8px;
+    padding: 24px;
+
+}
+
+.plate img {
+    object-fit: cover; /* картинка кавером */
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+
+/* Gallery */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  .bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+  }
